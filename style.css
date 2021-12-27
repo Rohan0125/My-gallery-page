@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat:wght@500&family=Roboto+Mono&family=Ubuntu&display=swap');
+html{
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+.root{
+  margin:10vh 15vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+
+  font-family: "Ubuntu";
+}
+
+#heading{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+
+  /* background-color: grey; */
+
+  width: 65vw;
+  padding:15px;
+  margin-bottom:70px;
+}
+.main-heading{
+  font-size: 25px;
+}
+.sub-heading{
+  margin-top: 0;
+  color: grey;
+  font-size:13px;
+
+
+}
+#info{
+  display: flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+
+}
+.heading-img{
+  background-image: url("profilePhoto.png");
+  background-repeat:no-repeat;
+  background-size:cover;
+  background-position: center;
+
+  width: 120px;
+  height: 120px;
+
+  border-radius: 100%;
+}
+.box{
+  /* background-color: yellow; */
+  color: #716b6b;
+  width: 70px;
+  /* height: 40px; */
+  margin:2px 35px;
+  margin-top: 25px;
+
+  box-shadow: 0px 1px 25px silver;
+
+  line-height: 5px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.sub-text{
+  font-size:10px;
+}
+
+#photo{
+  display: grid;
+
+  grid-template-columns: repeat(3,minmax(150px,230px));
+  grid-template-rows: repeat(3,minmax(150px,230px));
+  justify-content:center;
+  grid-gap:20px;
+}
+.grid{
+  border-radius: 10px;
+box-shadow: 5px 5px 13px silver;
+}
+
+.grid-1{
+
+  grid-area:1/1/2/2;
+  background-image:url("photo1.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.grid-2{
+
+  grid-area:1/2/2/4;
+  background-image:url("hori3.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.grid-3{
+
+  grid-area:2/1/3/3;
+  background-image:url("hori1.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.grid-4{
+
+  grid-area:2/3/4/4;
+  background-image:url("vertical.jpg");
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.grid-5{
+
+  grid-area:3/1/4/2;
+  background-image:url("photo5.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+.grid-6{
+
+  grid-area:3/2/4/3;
+  background-image:url("photo6.png");
+  background-size:cover;
+  background-position: center;
+  background-repeat:no-repeat;
+}
+footer{
+  position:relative;
+  /* bottom:0;
+   */
+   top: 90px;
+   color: #847979;
+}
+
+@media screen and (max-width:600px){
+
+  #photo{
+    grid-template-columns: repeat(3,minmax(50px,230px));
+    grid-template-rows:  repeat(3,minmax(50px,230px));
+    grid-gap: 10px;
+    width: 90vw;
+    height: 55vh;
+  }
+  .box{
+    margin: 2px 20px;
+  }
+  #heading{
+    margin-bottom: 55px;
+  }
+}
